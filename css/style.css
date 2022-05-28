@@ -44,16 +44,40 @@
         display: block;
         padding: 0 30px;
         opacity: 1;
+        position: fixed;
+        left: 270px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+        transition: all 0.3s ease;
+    }
+    
+    .section.back-section {
+        z-index: 1;
+    }
+    
+    .section.active {
+        z-index: 2;
+        opacity: 1;
+        animation: slideSection 1s ease;
+    }
+    
+    @keyframes slideSection {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
     }
     
     .hidden {
         display: none !important;
         width: 100%;
         margin: auto;
-    }
-    
-    .main-content {
-        padding-left: 270px;
     }
     
     .padd-15 {
@@ -149,6 +173,7 @@
         justify-content: center;
         align-items: center;
         z-index: 10;
+        transition: all 0.3s ease;
     }
     
     .aside .logo {
@@ -207,6 +232,7 @@
         display: none;
         align-items: center;
         justify-content: center;
+        transition: all 0.3s ease;
     }
     
     .aside .nav-toggler span {
@@ -720,16 +746,95 @@
         padding: 0 50px;
     }
     
+    @media (max-width:1299px) {
+        .home .home-img {
+            margin-top: 70px;
+            flex: 0 0 40%;
+            max-width: 40%;
+            text-align: center;
+            position: relative;
+        }
+        .home-img::after {
+            content: '';
+            position: absolute;
+            height: 80px;
+            width: 80px;
+            border-bottom: 10px solid var(--skin-color);
+            border-right: 10px solid var(--skin-color);
+            right: -20px;
+            bottom: -40px;
+        }
+        .home-img::before {
+            content: '';
+            position: absolute;
+            height: 80px;
+            width: 80px;
+            border-top: 10px solid var(--skin-color);
+            border-left: 10px solid var(--skin-color);
+            left: -20px;
+            top: -40px;
+        }
+        .home .home-img img {
+            height: 400px;
+            border-radius: 15px;
+        }
+    }
+    
     @media (max-width:1199px) {
         .aside {
             left: -270px;
         }
-        .main-content {
-            padding-left: 0;
+        .aside.open {
+            left: 0;
+        }
+        .aside .nav-toggler {
+            display: flex;
+            left: 30px;
+        }
+        .aside .nav-toggler.open {
+            left: 200px;
+            height: 25px;
+        }
+        .section {
+            left: 0;
         }
         .about .about-content .personal-info .info-item p span {
             display: block;
             margin-left: 0;
+        }
+    }
+    
+    @media (max-width:1050px) {
+        .home .home-img {
+            margin-top: 70px;
+            flex: 0 0 40%;
+            max-width: 40%;
+            text-align: center;
+            position: relative;
+        }
+        .home-img::after {
+            content: '';
+            position: absolute;
+            height: 80px;
+            width: 80px;
+            border-bottom: 10px solid var(--skin-color);
+            border-right: 10px solid var(--skin-color);
+            left: 250px;
+            bottom: -30px;
+        }
+        .home-img::before {
+            content: '';
+            position: absolute;
+            height: 80px;
+            width: 80px;
+            border-top: 10px solid var(--skin-color);
+            border-left: 10px solid var(--skin-color);
+            left: -20px;
+            top: -40px;
+        }
+        .home .home-img img {
+            height: 400px;
+            border-radius: 15px;
         }
     }
     
@@ -833,6 +938,18 @@
         .about .about-content .personal-info {
             flex: 0 0 100%;
             max-width: 100%;
+        }
+        .timeline-box {
+            left: 0;
+            right: 0;
+        }
+        .timeline-title {
+            font-weight: 400;
+            font-size: 12px;
+        }
+        .timeline .timeline-text {
+            line-height: 15px;
+            font-size: 10px;
         }
         .home .home-img {
             flex: 0 0 40%;
