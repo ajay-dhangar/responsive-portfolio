@@ -745,7 +745,35 @@
             max-width: 100%;
         }
         .home .home-img {
-            display: none;
+            margin-top: 70px;
+            flex: 0 0 40%;
+            max-width: 40%;
+            text-align: center;
+            position: relative;
+        }
+        .home-img::after {
+            content: '';
+            position: absolute;
+            height: 80px;
+            width: 80px;
+            border-bottom: 10px solid var(--skin-color);
+            border-right: 10px solid var(--skin-color);
+            right: 20px;
+            bottom: -40px;
+        }
+        .home-img::before {
+            content: '';
+            position: absolute;
+            height: 80px;
+            width: 80px;
+            border-top: 10px solid var(--skin-color);
+            border-left: 10px solid var(--skin-color);
+            left: -20px;
+            top: -40px;
+        }
+        .home .home-img img {
+            height: 400px;
+            border-radius: 15px;
         }
     }
     
@@ -760,5 +788,81 @@
         .about .about-content .personal-info {
             flex: 0 0 100%;
             max-width: 100%;
+        }
+        .home .home-img {
+            margin-top: 70px;
+            flex: 0 0 40%;
+            max-width: 40%;
+            text-align: center;
+            position: relative;
+        }
+        .home-img::after {
+            content: '';
+            position: absolute;
+            height: 80px;
+            width: 80px;
+            border-bottom: 10px solid var(--skin-color);
+            border-right: 10px solid var(--skin-color);
+            right: -210px;
+            bottom: -30px;
+        }
+        .home-img::before {
+            content: '';
+            position: absolute;
+            height: 80px;
+            width: 80px;
+            border-top: 10px solid var(--skin-color);
+            border-left: 10px solid var(--skin-color);
+            left: -20px;
+            top: -40px;
+        }
+        .home .home-img img {
+            height: 400px;
+            border-radius: 15px;
+        }
+    }
+    
+    @media (max-width:446px) {
+        .contact .contact-form .col-6,
+        .contact .contact-info-item,
+        .portfolio .portfolio-item,
+        .service .service-item,
+        .about .about-content .experience,
+        .about .about-content .education,
+        .about .about-content .skills,
+        .about .about-content .personal-info {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .home .home-img {
+            flex: 0 0 40%;
+            max-width: 40%;
+            text-align: center;
+            position: relative;
+        }
+        .home-img::after {
+            content: '';
+            position: absolute;
+            height: 80px;
+            width: 80px;
+            border-bottom: 10px solid var(--skin-color);
+            border-right: 10px solid var(--skin-color);
+            right: -180px;
+            bottom: -30px;
+        }
+        .home-img::before {
+            content: '';
+            position: absolute;
+            height: 80px;
+            width: 80px;
+            border-top: 10px solid var(--skin-color);
+            border-left: 10px solid var(--skin-color);
+            left: -20px;
+            top: -40px;
+        }
+        .home .home-img img {
+            height: 300px;
+            border-radius: 15px;
+            position: relative;
         }
     }
