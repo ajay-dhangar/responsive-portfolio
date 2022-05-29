@@ -557,6 +557,10 @@
         text-align: justify;
         color: var(--text-black-500);
     }
+    
+    .about .about-content .timeline .timeline-text button {
+        background: var(--skin-color);
+    }
     /*  --=====  service =====--   */
     
     .service .container {
