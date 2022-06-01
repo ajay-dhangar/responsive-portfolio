@@ -750,6 +750,26 @@
         padding: 0 50px;
     }
     
+    .socials {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .socicon {
+        width: 2rem;
+        height: 2rem;
+        margin: 2px;
+    }
+    
+    footer {
+        background-color: var(--bg-color);
+        padding: 1.25rem;
+        text-align: center;
+        margin: 2rem 0 0;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+    
     @media (max-width:1299px) {
         .home .home-img {
             margin-top: 70px;
