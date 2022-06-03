@@ -768,6 +768,11 @@
         margin: 2rem 0 0;
         font-weight: 700;
         margin-bottom: 40px;
+        color: var(--text-black-900);
+    }
+    
+    footer a {
+        color: var(--skin-color);
     }
     
     @media (max-width:1299px) {
