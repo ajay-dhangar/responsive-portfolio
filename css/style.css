@@ -561,6 +561,14 @@
     .about .about-content .timeline .timeline-text button {
         background: var(--skin-color);
     }
+    
+    .candidate-availability[_ngcontent-app-root-c217] {
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        line-height: 24px;
+        margin-top: 8px;
+    }
     /*  --=====  service =====--   */
     
     .service .container {
