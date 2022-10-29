@@ -478,8 +478,24 @@
                     <!--===== Contact form start =====-->
 
                     <div class="row">
-                        <div class="contact-form padd-15">
-                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdwKALr2hiOdOe-V2KkMYUMLTtNQqwPVnyJ_NZrbMpgFXlAVg/viewform?embedded=true" width="640" height="947" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                        <div class="contact-form-container">
+                            <div class="contact-form">
+                                <form action="https://formspree.io/f/meqnpvpr" method="POST">
+                                    <div class="form-control">
+                                        <label for="name">Name</label>
+                                        <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field" required />
+                                    </div>
+                                    <div class="form-control">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field" required />
+                                    </div>
+                                    <div class="form-control">
+                                        <label for="message">Message</label>
+                                        <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message" class="input-field" required></textarea>
+                                    </div>
+                                    <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
+                                </form>
+                            </div>
                         </div>
                     </div>
                     <!--===== Contact form end =====-->
