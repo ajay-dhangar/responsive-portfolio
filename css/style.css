@@ -792,10 +792,6 @@
         outline: none;
     }
     
-    .input-field::placeholder {
-        padding: 0.5rem;
-    }
-    
     .submit-btn {
         width: 100%;
         padding: 10px;
