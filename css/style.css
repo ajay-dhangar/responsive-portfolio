@@ -360,6 +360,8 @@ h3.my-profession {
 .home .home-img img {
   height: 400px;
   border-radius: 15px;
+  border: 1px solid var(--text-black-900);
+  background-color: var(--skin-color);
 }
 /*   About  */
 
